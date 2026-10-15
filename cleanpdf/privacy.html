@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CleanPDF – Privacy Policy</title>
+<style>
+body{font:16px/1.6 system-ui,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:#1b2430}
+h1{font-size:28px;margin-bottom:4px}h2{font-size:20px;margin-top:32px}.meta{color:#5a6b80;margin-top:0}
+code{background:#eef2f8;padding:1px 4px;border-radius:3px}
+</style>
+</head>
+<body>
+<h1>CleanPDF – Privacy Policy</h1>
+<p class="meta">Effective date: 14 October 2026 · Applies to the CleanPDF Chrome extension (“CleanPDF”, “the extension”).</p>
+
+<h2>Summary</h2>
+<p>CleanPDF does not collect, store on a server, sell or share your data. The pages you save are processed on your
+computer and the files go to your Downloads folder. The only network requests the extension itself makes go to
+ExtensionPay, to check whether you have paid for Pro, and only after you have opened its upgrade or log-in page.</p>
+
+<h2>What the extension does with web pages</h2>
+<p>When you click the CleanPDF button, the extension reads and changes the page in your current tab (or, with Pro
+“save all tabs”, the tabs in your current window) to remove ads and pop-ups. It then makes a PDF, Markdown or HTML
+file and saves it to your Downloads folder. All of this happens in your browser. Page content, page addresses (URLs)
+and your browsing history are never sent to the developer or to anyone else.</p>
+<p>The optional “debugger” permission is used only to create the PDF file with Chrome's built-in
+<code>Page.printToPDF</code> command. It is not used to read network traffic, cookies, passwords or form data.</p>
+
+<h2>What is stored, and where</h2>
+<ul>
+<li><strong>Your settings</strong> (paper size, Pro options, file name template) and <strong>today's save count</strong> for the
+free daily limit, in Chrome's extension storage (<code>chrome.storage.local</code>) on your device.</li>
+<li><strong>Licence information</strong> from ExtensionPay (a random licence key, whether you have paid, and the install date),
+in <code>chrome.storage.sync</code>. If you have Chrome Sync turned on, Chrome syncs this through your Google account
+so Pro works on your other computers. Otherwise it stays on your device.</li>
+</ul>
+<p>Removing the extension deletes the data it stored on your device.</p>
+
+<h2>Payments (ExtensionPay and Stripe)</h2>
+<p>CleanPDF Pro is sold through <a href="https://extensionpay.com">ExtensionPay</a>, which uses
+<a href="https://stripe.com">Stripe</a> to process payments.</p>
+<ul>
+<li>When you click “Upgrade to Pro” or “Already paid? Log in”, ExtensionPay's page opens. Anything you enter there,
+such as your email address and card details, goes to ExtensionPay and Stripe, not to the extension.</li>
+<li>After that, the extension contacts extensionpay.com with its random licence key to check whether you have paid.
+That request contains no page content, URLs or browsing data.</li>
+<li>If you never open the upgrade or log-in page, the extension makes no network requests at all.</li>
+<li>The developer can see, in the ExtensionPay dashboard, the email address and payment status of people who have paid.
+The developer never sees card numbers. This information is used only to provide Pro and to answer support requests.</li>
+</ul>
+<p>See the privacy policies of <a href="https://extensionpay.com">ExtensionPay</a> and
+<a href="https://stripe.com/privacy">Stripe</a> for how they handle your data.</p>
+
+<h2>What CleanPDF does not do</h2>
+<ul>
+<li>No analytics, tracking, advertising or telemetry.</li>
+<li>No selling or sharing of data, and no use of data for anything other than saving pages and providing Pro.</li>
+<li>No remote code: everything the extension runs is included in the package reviewed by the Chrome Web Store.</li>
+</ul>
+
+<h2>Children</h2>
+<p>CleanPDF is not directed at children and does not knowingly collect any information from them.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted at this address with a new effective date. Changes that
+affect how data is handled will also be mentioned in the extension's release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy: <a href="mailto:support@automationglass.com">support@automationglass.com</a></p>
+</body>
+</html>
