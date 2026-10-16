@@ -6,16 +6,17 @@
 <meta name="color-scheme" content="light dark">
 <title>CleanPDF – Privacy Policy</title>
 <link rel="canonical" href="https://samautomationglass.github.io/automationglass-pages/cleanpdf/privacy.html">
-<style>
-:root{color-scheme:light dark;--fg:#1b2430;--muted:#5a6b80;--code:#eef2f8;--line:#d9e0ea;--link:#0b57d0}
-@media (prefers-color-scheme:dark){:root{--fg:#e6e9ee;--muted:#a8b3c2;--code:#2a2f38;--line:#3a414c;--link:#8ab4f8}}
-body{font:16px/1.6 system-ui,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:var(--fg)}
-h1{font-size:28px;margin-bottom:4px}h2{font-size:20px;margin-top:32px}.meta{color:var(--muted);margin-top:0}
-a{color:var(--link)}code{background:var(--code);padding:1px 4px;border-radius:3px}
-table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
-</style>
+<link rel="icon" href="icon128.png">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
-<body>
+<body class="cleanpdf">
+<div class="wrap">
+<header class="brand">
+  <a class="brand-link" href="index.html"><span class="brand-icon" aria-hidden="true"></span>
+  <span><span class="brand-name">CleanPDF</span><span class="brand-tag">Save web pages as clean PDFs, without ads or pop-ups</span></span></a>
+</header>
+<nav class="site-nav" aria-label="CleanPDF pages"><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a><a href="mailto:support@automationglass.com">Support</a></nav>
+<main class="card">
 <h1>CleanPDF – Privacy Policy</h1>
 <p class="meta">Effective date: 16 October 2026 · Applies to the CleanPDF Chrome extension (“CleanPDF”, “the extension”) ·
 This page: https://samautomationglass.github.io/automationglass-pages/cleanpdf/privacy.html</p>
@@ -38,7 +39,7 @@ each tab). It is not used to read network traffic, cookies, passwords or form da
 Chrome's print dialog instead.</p>
 
 <h2>Every data item CleanPDF handles, and where it goes</h2>
-<table>
+<div class="table-wrap"><table>
 <tr><th>Data</th><th>Where it is kept</th><th>Sent anywhere?</th></tr>
 <tr><td>Content, title and address of the page you save</td><td>Only in the open tab while saving; the file you save goes to your Downloads folder</td><td>No</td></tr>
 <tr><td>Settings: paper size, Pro options, file name template, whether you declined the debugger permission</td><td><code>chrome.storage.local</code> on your device</td><td>No</td></tr>
@@ -47,7 +48,7 @@ Chrome's print dialog instead.</p>
 <td><code>chrome.storage.sync</code>. If Chrome Sync is on, Chrome syncs it through your Google account so Pro works on your other computers; otherwise it stays on your device</td>
 <td>Only the licence key, to extensionpay.com, to check your Pro status, after you have opened an ExtensionPay page</td></tr>
 <tr><td>Your email address and card details</td><td>Entered by you on ExtensionPay's pages, not in the extension</td><td>Go to ExtensionPay and Stripe (see below)</td></tr>
-</table>
+</table></div>
 <p>Removing the extension deletes the data it stored on your device. When you remove it, Chrome opens a short
 thank-you page on this website (<code>uninstalled.html</code>); no information about you is added to that address.
 This website is hosted on GitHub Pages, which may keep standard web server logs (such as IP addresses) as described in
@@ -87,5 +88,12 @@ affect how data is handled will also be mentioned in the extension's release not
 <h2>Contact</h2>
 <p>Questions about privacy: <a href="mailto:support@automationglass.com">support@automationglass.com</a>.
 See also the <a href="terms.html">terms of sale</a> and <a href="refund.html">refund policy</a>.</p>
+</main>
+<footer class="site-footer">
+  <p>CleanPDF is made and sold by AutomationGlass, 416 S Grant Street, South Bend, Indiana, USA</p>
+  <p>Support: <a href="mailto:support@automationglass.com">support@automationglass.com</a> ·
+  <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refund policy</a></p>
+</footer>
+</div>
 </body>
 </html>

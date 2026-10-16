@@ -8,24 +8,18 @@
 <meta name="description" content="Save any web page as a clean PDF without ads, pop-ups or cookie banners. One click, processed locally in your browser.">
 <link rel="canonical" href="https://samautomationglass.github.io/automationglass-pages/cleanpdf/index.html">
 <link rel="icon" href="icon128.png">
-<style>
-:root{color-scheme:light dark;--fg:#1b2430;--muted:#5a6b80;--line:#e3e8ef;--link:#0b57d0;--draft:#fff4d6;--draftfg:#6b4e00}
-@media (prefers-color-scheme:dark){:root{--fg:#e6e9ee;--muted:#a8b3c2;--line:#3a414c;--link:#8ab4f8;--draft:#3b3220;--draftfg:#f3d58a}}
-body{font:17px/1.6 system-ui,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:var(--fg)}
-header{display:flex;align-items:center;gap:16px}header img{width:64px;height:64px}h1{font-size:30px;margin:0}
-.tag,.meta{color:var(--muted);margin:4px 0 0}h2{font-size:20px;margin-top:32px}a{color:var(--link)}
-.draft{background:var(--draft);color:var(--draftfg);padding:10px 14px;border-radius:6px;font-size:15px}
-footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
-</style>
+<link rel="stylesheet" href="../assets/style.css">
 </head>
-<body>
-<header>
-  <img src="icon128.png" alt="">
-  <div>
-    <h1>CleanPDF</h1>
-    <p class="tag">Save any web page as a clean PDF without ads, pop-ups or cookie banners. One click, processed locally in your browser.</p>
-  </div>
+<body class="cleanpdf">
+<div class="wrap">
+<header class="brand">
+  <a class="brand-link" href="index.html"><span class="brand-icon" aria-hidden="true"></span>
+  <span><span class="brand-name">CleanPDF</span><span class="brand-tag">Save web pages as clean PDFs, without ads or pop-ups</span></span></a>
 </header>
+<nav class="site-nav" aria-label="CleanPDF pages"><a href="index.html" aria-current="page">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a><a href="mailto:support@automationglass.com">Support</a></nav>
+<main class="card">
+<h1>CleanPDF</h1>
+<p class="lead">Save any web page as a clean PDF without ads, pop-ups or cookie banners. One click, processed locally in your browser.</p>
 
 <h2>What it does</h2>
 <ul>
@@ -44,9 +38,12 @@ Read the full <a href="privacy.html">privacy policy</a>.</p>
 <p>Pro is sold through ExtensionPay (payments by Stripe). See the <a href="terms.html">terms of sale</a> and the
 <a href="refund.html">refund policy</a>. To cancel a subscription, open CleanPDF and click
 “Manage or cancel subscription”.</p>
-<footer>
-  Support: <a href="mailto:support@automationglass.com">support@automationglass.com</a> ·
-  <a href="index.html">CleanPDF</a> · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refund policy</a>
+</main>
+<footer class="site-footer">
+  <p>CleanPDF is made and sold by AutomationGlass, 416 S Grant Street, South Bend, Indiana, USA</p>
+  <p>Support: <a href="mailto:support@automationglass.com">support@automationglass.com</a> ·
+  <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refund policy</a></p>
 </footer>
+</div>
 </body>
 </html>

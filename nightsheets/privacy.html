@@ -4,18 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NightSheets – Privacy Policy</title>
-<style>
-body{font:16px/1.6 system-ui,"Segoe UI",Roboto,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:#1b2430;background:#fff}
-h1{font-size:28px;margin-bottom:4px}h2{font-size:20px;margin-top:32px}.meta{color:#5a6b80;margin-top:0}
-code{background:#eef2f8;padding:1px 4px;border-radius:3px}a{color:#1a56c4}
-.draft{border:2px dashed #b45309;background:#fff7ed;padding:10px 14px;border-radius:6px}
-table{border-collapse:collapse;width:100%}td,th{border:1px solid #d5dce6;padding:6px 8px;text-align:left;vertical-align:top}
-nav{margin-top:40px;padding-top:12px;border-top:1px solid #d5dce6;font-size:14px}
-@media (prefers-color-scheme: dark){body{background:#15191f;color:#e3e7ee}code{background:#252b35}a{color:#8ab4f8}.meta{color:#a6b0be}
-.draft{background:#2a1f12;border-color:#d97706}td,th{border-color:#3a4250}nav{border-color:#3a4250}}
-</style>
+<link rel="icon" href="icon128.png">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
-<body>
+<body class="nightsheets">
+<div class="wrap">
+<header class="brand">
+  <a class="brand-link" href="index.html"><span class="brand-icon" aria-hidden="true"></span>
+  <span><span class="brand-name">NightSheets</span><span class="brand-tag">Dark mode for Google Sheets, Docs and Slides</span></span></a>
+</header>
+<nav class="site-nav" aria-label="NightSheets pages"><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a><a href="mailto:support@automationglass.com">Support</a></nav>
+<main class="card">
 <h1>NightSheets – Privacy Policy</h1>
 <p class="meta">Effective date: 16 October 2026 · Applies to the NightSheets Chrome extension (“NightSheets”, “the extension”) ·
 This page: https://samautomationglass.github.io/automationglass-pages/nightsheets/privacy.html</p>
@@ -33,7 +32,7 @@ does not run on Gmail, Google Forms or any other website. Document content, page
 history are never sent to the developer or to anyone else.</p>
 
 <h2>Every data item, and where it goes</h2>
-<table>
+<div class="table-wrap"><table>
 <tr><th>Data</th><th>Where it is kept</th><th>Sent anywhere?</th></tr>
 <tr><td>Your settings: dark mode on/off, the switch for each app, contrast preset, per-app presets, schedule</td>
 <td><code>chrome.storage.local</code> in your browser</td><td>No</td></tr>
@@ -47,7 +46,7 @@ Left empty, it is estimated from your time zone; the extension never asks the br
 trial or log-in page</td></tr>
 <tr><td>Email address (and card details) you enter on ExtensionPay's payment, trial or log-in page</td>
 <td>ExtensionPay and Stripe, not the extension</td><td>Entered by you directly on extensionpay.com / Stripe</td></tr>
-</table>
+</table></div>
 <p>Removing the extension deletes the data it stored in your browser. When you remove it, Chrome opens a short
 thank-you page (<code>https://samautomationglass.github.io/automationglass-pages/nightsheets/uninstalled.html</code>); no information about you is
 added to that address and the page has no tracking.</p>
@@ -89,6 +88,12 @@ affect how data is handled will also be mentioned in the extension's release not
 
 <h2>Contact</h2>
 <p>Questions about privacy: <a href="mailto:support@automationglass.com">support@automationglass.com</a></p>
-<nav><a href="index.html">NightSheets</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refunds</a> · <a href="mailto:support@automationglass.com">support@automationglass.com</a></nav>
+</main>
+<footer class="site-footer">
+  <p>NightSheets is made and sold by AutomationGlass, 416 S Grant Street, South Bend, Indiana, USA</p>
+  <p>Support: <a href="mailto:support@automationglass.com">support@automationglass.com</a> ·
+  <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refund policy</a></p>
+</footer>
+</div>
 </body>
 </html>
