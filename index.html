@@ -1,1 +1,73 @@
-<!doctype html><meta charset=utf-8><title>Automation Glass</title><body style="font-family:sans-serif;max-width:640px;margin:2em auto"><h1>Automation Glass</h1><ul><li><a href="cleanpdf/">CleanPDF</a></li><li><a href="focusread/">FocusRead</a></li><li><a href="nightsheets/">NightSheets</a></li></ul><p>Contact: <a href="mailto:support@automationglass.com">support@automationglass.com</a></p>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Automation Glass – Small software tools and Chrome extensions</title>
+<meta name="description" content="Automation Glass makes small software tools and Chrome extensions, including NightSheets and CleanPDF.">
+<link rel="canonical" href="https://pages.automationglass.com/">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.brand h1.brand-name{margin:0}
+.intro{margin:0 0 22px;color:var(--muted);font-size:17px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:0 0 8px}
+.product{display:flex;flex-direction:column;padding:28px 28px 24px}
+.product-head{display:flex;align-items:center;gap:12px;margin:0 0 12px}
+.product-head img{flex:none;width:40px;height:40px;border-radius:10px}
+.product h2{margin:0;padding:0;border:0;font-size:20px}
+.product p{flex:1}
+.product .button{align-self:flex-start;margin:0 0 14px}
+.product-links{display:flex;flex-wrap:wrap;gap:4px 16px;margin:0;padding:12px 0 0;list-style:none;
+  border-top:1px solid var(--line);font-size:14.5px}
+.product-links li{margin:0}
+.button:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+@media (max-width:600px){
+  .product{padding:22px 18px 18px}
+  .intro{font-size:16px;padding:0 4px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="brand">
+  <h1 class="brand-name">Automation Glass</h1>
+</header>
+<main>
+<p class="intro">Small software tools and Chrome extensions.</p>
+<section class="products" aria-label="Products">
+  <article class="card product" aria-labelledby="nightsheets-title">
+    <div class="product-head">
+      <img src="nightsheets/icon128.png" alt="" width="40" height="40">
+      <h2 id="nightsheets-title">NightSheets</h2>
+    </div>
+    <p>A Chrome extension that shows Google Sheets, Docs and Slides in a dark theme. Styling only: your files, printing and exports are not changed.</p>
+    <a class="button" href="nightsheets/index.html">About NightSheets</a>
+    <ul class="product-links" aria-label="NightSheets policies">
+      <li><a href="nightsheets/privacy.html">Privacy</a></li>
+      <li><a href="nightsheets/terms.html">Terms</a></li>
+      <li><a href="nightsheets/refund.html">Refunds</a></li>
+    </ul>
+  </article>
+  <article class="card product" aria-labelledby="cleanpdf-title">
+    <div class="product-head">
+      <img src="cleanpdf/icon128.png" alt="" width="40" height="40">
+      <h2 id="cleanpdf-title">CleanPDF</h2>
+    </div>
+    <p>A Chrome extension that cleans a web page of ads, pop-ups and cookie banners, then opens Chrome's print dialog to save it as PDF. Pages are processed on your computer.</p>
+    <a class="button" href="cleanpdf/index.html">About CleanPDF</a>
+    <ul class="product-links" aria-label="CleanPDF policies">
+      <li><a href="cleanpdf/privacy.html">Privacy</a></li>
+      <li><a href="cleanpdf/terms.html">Terms</a></li>
+      <li><a href="cleanpdf/refund.html">Refunds</a></li>
+    </ul>
+  </article>
+</section>
+</main>
+<footer class="site-footer">
+  <p>Support: <a href="mailto:support@automationglass.com">support@automationglass.com</a></p>
+  <p>416 S Grant Street, South Bend, Indiana, USA</p>
+</footer>
+</div>
+</body>
+</html>
