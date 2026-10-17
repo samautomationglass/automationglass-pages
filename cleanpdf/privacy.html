@@ -23,26 +23,23 @@ This page: https://samautomationglass.github.io/automationglass-pages/cleanpdf/p
 
 <h2>Summary</h2>
 <p>CleanPDF does not collect, store on a server, sell or share your data. The pages you save are processed on your
-computer and the files go to your Downloads folder. CleanPDF has no analytics, tracking or telemetry of any kind. The
+computer and the files you save go to your own computer. CleanPDF has no analytics, tracking or telemetry of any kind. The
 only network requests the extension itself makes go to ExtensionPay, to check whether you have paid for Pro (or started
 a free trial), and only after you have opened its upgrade, trial or log-in page.</p>
 
 <h2>What the extension does with web pages</h2>
-<p>When you click the CleanPDF button, the extension reads and changes the page in your current tab (or, with Pro
-“save all tabs”, the tabs in your current window) to remove ads and pop-ups. It reads the page's title and address
-only to name the file. It then makes a PDF, Markdown or HTML file and saves it to your Downloads folder. All of this
-happens in your browser. Page content, page addresses (URLs) and your browsing history are never sent to the developer
-or to anyone else.</p>
-<p>The optional “debugger” permission is used only to create the PDF file with Chrome's built-in
-<code>Page.printToPDF</code> command (and, for Pro “save all tabs”, to run CleanPDF's own packaged clean-up script in
-each tab). It is not used to read network traffic, cookies, passwords or form data. If you decline it, CleanPDF uses
-Chrome's print dialog instead.</p>
+<p>When you click the CleanPDF button, the extension reads and changes the page in your current tab to remove ads
+and pop-ups. It reads the page's title and address only to name the file and, if you turn on the Pro header/footer
+option, to print them on the pages. It then opens Chrome's print dialog, where you choose “Save as PDF”; Chrome itself
+creates the PDF. With Pro you can instead export Markdown or HTML, which CleanPDF saves to your Downloads folder. All of
+this happens in your browser. Page content, page addresses (URLs) and your browsing history are never sent to the
+developer or to anyone else.</p>
 
 <h2>Every data item CleanPDF handles, and where it goes</h2>
 <div class="table-wrap"><table>
 <tr><th>Data</th><th>Where it is kept</th><th>Sent anywhere?</th></tr>
-<tr><td>Content, title and address of the page you save</td><td>Only in the open tab while saving; the file you save goes to your Downloads folder</td><td>No</td></tr>
-<tr><td>Settings: paper size, Pro options, file name template, whether you declined the debugger permission</td><td><code>chrome.storage.local</code> on your device</td><td>No</td></tr>
+<tr><td>Content, title and address of the page you save</td><td>Only in the open tab while saving; the file you save goes where you choose in Chrome's print dialog, or to your Downloads folder for Markdown/HTML export</td><td>No</td></tr>
+<tr><td>Settings: paper size, Pro options, file name template</td><td><code>chrome.storage.local</code> on your device</td><td>No</td></tr>
 <tr><td>Today's save count (date and number) for the free daily limit</td><td><code>chrome.storage.local</code> on your device</td><td>No</td></tr>
 <tr><td>ExtensionPay licence data: a random licence key, install date, and the status ExtensionPay returns (paid or not, payment date, trial start date, subscription status)</td>
 <td><code>chrome.storage.sync</code>. If Chrome Sync is on, Chrome syncs it through your Google account so Pro works on your other computers; otherwise it stays on your device</td>
